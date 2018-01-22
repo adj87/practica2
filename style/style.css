@@ -1,0 +1,185 @@
+@font-face{
+  font-family: "mifuentebold";
+  src: url(../fonts/Gothamroundedbold.otf);
+}
+
+@font-face{
+  font-family: "mifuenteregular";
+  src: url("../fonts/GothamLightRegular.otf");
+}
+
+*{
+  padding: 0;
+  margin:0;
+  text-decoration: none;
+  box-sizing: inherit;
+}
+html {
+  color: white;
+  height: 100vh;
+  /*background: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);*/
+  box-sizing: border-box;
+  font-family:'mifuenteregular';
+  font-size: 16px;
+  font-weight:2 ;
+}
+
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+ul{
+  list-style-type: none;
+}
+
+h1{
+  /*font-size: 70px;*/
+  width: 80%;
+  text-align: center;
+  font-size: 3rem
+}
+
+hr{ 
+  display: block; 
+  /*content: ""; */
+  height: 30px; 
+  /*margin-top: -31px; */
+  border-style: solid; 
+  border-color: white; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px;
+
+}
+
+a{
+  color: inherit;
+  display: block;
+  padding: 20px;
+  transition: all 0.5s;
+}
+
+a:hover{
+  font-size: 1.02rem;
+}
+
+section{
+  height: 100vh
+}
+
+p{
+  line-height: 1.5rem;
+  opacity: .1;
+  transition: all 2s;
+  transform: translateX(30%) scale(0)
+}
+
+p.active{
+  opacity: 1;
+  transform:translateX(0) scale(1);
+}
+
+
+
+.navbar{
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2)
+}
+
+.navbar__list{
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar__item{
+  text-align: center;
+  font-family: "mifuentebold","mifuenteregular";
+}
+
+.navbar__item--logo{
+  margin-right:auto
+}
+
+#inicio{
+  background-image: url("../images/sky-colors-wide2.jpg");
+  background-size: cover;
+  background-position: center;
+  /*margin-top: -60px;*/
+  padding-right: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items:  center;
+}
+
+#inicio p {
+  font-size: 1.8rem;
+  line-height: 3.5rem;
+  width: 600px;
+  font-family: 'Pacifico', cursive;
+  color:white;
+  text-align: right;
+  text-shadow: 3px 0px 12px rgba(97, 97, 97, 0.76);
+
+
+
+}
+
+#quien-soy{
+  /*background: linear-gradient(45deg,  #e950b7 0%,#478ed1 50%,#0d47a1 100%);*/
+  background:#ff2b66;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+
+}
+
+.sobremi__photo{
+  width: 50px;
+}
+
+.sobremi__info{
+  padding: 40px;
+  background:rgba(255,255,255, 0.5);
+}
+
+#estudios{
+  background-color:#ffa200;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.estudios__info{
+  transform: rotate(-3deg);
+  background-color: white;
+  color:black;
+  padding: 80px
+}
+
+.estudios__info span{
+  color:#ffa200;
+}
+
+.estudios__info__title{
+  font-size:1.3rem;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+#experiencia{
+  background-color:#8bc34a;
+}
+
+
+
+/*#quien-soy{
+  height: 100vh;
+  background-color: white;
+  display: flex
+}*/
+
+
