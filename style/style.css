@@ -34,7 +34,7 @@ ul{
 
 h1{
   /*font-size: 70px;*/
-  width: 80%;
+  width: 100%;
   text-align: center;
   font-size: 3rem
 }
@@ -76,6 +76,13 @@ p{
 p.active{
   opacity: 1;
   transform:translateX(0) scale(1);
+}
+
+input{
+  height: 45px;
+  border-radius: 3px;
+  width: 100%;
+  margin-top:25px;
 }
 
 
@@ -136,7 +143,7 @@ p.active{
 }
 
 .sobremi__photo{
-  width: 50px;
+  width: 250px;
 }
 
 .sobremi__info{
@@ -174,7 +181,33 @@ p.active{
   background-color:#8bc34a;
 }
 
+#contacto{
+  background-color: black;
+  padding: 80px 225px;
+  display: flex;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+}
 
+.contacto__title{
+  flex:1 100%;
+}
+
+.contacto__logo{
+  flex:1;
+  align-self: center;
+  text-align: center
+}
+
+
+.contacto__form{
+  flex:1;
+  height: 100%;
+  display: flex;
+  /*flex-flow: row wrap;*/
+  flex-direction: column;
+  justify-content: space-around
+}
 
 /*#quien-soy{
   height: 100vh;
