@@ -5,6 +5,7 @@
 	<title></title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/grid.css">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<script src="https://use.fontawesome.com/5b0a2b2933.js"></script>
 	<!-- raleway -->
@@ -30,13 +31,20 @@
 			¿Quien soy?
 			<hr>
 			</h1>
-			<img src="./images/alberto.jpg" class="sobremi__photo">
-			<p>
-				Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por 		ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-			</p>
+			<div class="sobremi__info">
 				
-
-
+				<div class="col-5 sobremi__info__columna">
+					w
+				</div>	
+				<img src="./images/alberto.jpg" class="sobremi__photo col-2">
+				<div class="col-5 sobremi__info__columna">
+					s
+				</div>	
+			</div>
+				<p>
+					Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por 		ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+				</p>
+				
 		</section>
 		<section id="estudios">
 			<h1 class="estudios__title">
@@ -65,7 +73,7 @@
 			</h1>
 
 			<div class="contacto__logo">
-				<i class="fa fa-camera-retro fa-5x"></i>
+				<i class="fa fa-pencil fa-5x"></i>
 			</div>
 
 			<form class="contacto__form" action="" name="contacto">
@@ -78,22 +86,19 @@
 					<input type="text" placeholder="email" name="email">
 				</div>
 				<div class="form-row">
-					<label for="">Email</label>
-					<input type="text" placeholder="email" name="email">
-				</div>
-				<div class="form-row">
-					<label for="">Email</label>
-					<input type="text" placeholder="email" name="email">
-				</div>
-				<div class="form-row">
 					<label for="">¿Como me conociste?</label>
 					<select name="como">
 						<option value="1">Opcion 1</option>
 						<option value="2">Opcion 2</option>
 						<option value="3">Opcion 3</option>
-						<option value="4">Opcion 4</option>
+						<option value="">Otro</option>
 					</select>
 				</div>
+				<div class="form-row" id="otros">
+					<label>Dinos otro motivo</label>
+					<input type="text" name="como">
+				</div>
+				<input type="submit" name="Registrar">
 			</form>
 		</section>
 		<section></section>
