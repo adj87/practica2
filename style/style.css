@@ -34,6 +34,7 @@ ul{
 
 h1{
   /*font-size: 70px;*/
+  font-family: 'mifuentebold', 'mifuenteregular';
   width: 100%;
   text-align: center;
   font-size: 3rem
@@ -63,7 +64,8 @@ a:hover{
 }
 
 section{
-  height: 100vh
+  /*height: 100vh*/
+  min-height: 900px
 }
 
 p{
@@ -76,6 +78,7 @@ p{
 p.active{
   opacity: 1;
   transform:translateX(0) scale(1);
+
 }
 
 input,select{
@@ -84,6 +87,12 @@ input,select{
   width: 100%;
   margin-top:25px;
   font-size:1.5rem;
+}
+
+small{
+  color:#d6d6d6;
+  font-size: 0.8rem;
+  font-style: italic;
 }
 
 
@@ -116,6 +125,7 @@ input,select{
   display: flex;
   justify-content: flex-end;
   align-items:  center;
+  height: 100vh !important
 }
 
 #inicio p {
@@ -143,48 +153,99 @@ input,select{
 
 }
 
-.sobremi__photo{
-  width: 100px;
-  /*border-radius: 150px*/
+.quien-soy__photo{
+  /*width: 100px;*/
+  border-radius: 150px
 }
 
-.sobremi__info{
+.quien-soy__info{
   padding: 20px;
-  width: 100%
+  width: 100%;
+  height: 500px
 }
 
-.sobremi__info__columna{
-  padding: 40px
-}
-
-#estudios{
-  background-color:#ffa200;
-  padding: 80px;
+.quien-soy__info__columna{
+  /*padding: 40px;*/
+  height: 100%;
+  font-size: 2rem;
+  text-align: center;
+  width:500px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-around
 }
 
-.estudios__info{
-  transform: rotate(-3deg);
+.hobbies{
+  /*padding: 2px;*/
+  /*border:1px solid red;*/
+  /*margin-top: 25px*/
+}
+
+#estudios-experiencia{
+  background-color:#ffa200;
+  padding: 80px 250px;
+}
+
+.estudios-experiencia__info{
+  margin-top: 55px;
+  display: flex;
+  flex-direction: row
+}
+
+.paper{
   background-color: white;
   color:black;
-  padding: 80px
+  padding: 80px;
+  width: 50%
 }
 
-.estudios__info span{
-  color:#ffa200;
-}
-
-.estudios__info__title{
+.paper__title{
   font-size:1.3rem;
   margin-bottom: 10px;
   margin-top: 25px;
 }
 
-#experiencia{
+
+.paper span{
+  color:#ffa200;
+}
+
+.estudios__info{
+  transform: rotate(-3deg);
+-webkit-box-shadow: 12px -6px 20px 1px rgba(0,0,0,0.26);
+-moz-box-shadow: 12px -6px 20px 1px rgba(0,0,0,0.26);
+box-shadow: 12px -6px 20px 1px rgba(0,0,0,0.26);
+z-index: 100
+}
+
+.experiencia__info{
+  transform: rotate(1deg);
+-webkit-box-shadow: 12px -6px 20px 1px rgba(0,0,0,0.26);
+-moz-box-shadow: 12px -6px 20px 1px rgba(0,0,0,0.26);
+box-shadow: 12px -6px 20px 1px rgba(0,0,0,0.26);
+/*z-index: 100*/
+}
+
+
+
+
+#sobre-mi{
   background-color:#8bc34a;
+  padding: 80px 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.sobre-mi__video{
+  margin-top:20px;
+  
+}
+
+.sobre-mi__info p{
+  margin-top:20px;
+  font-size: 3rem;
+  line-height: 3.5rem !important
 }
 
 #contacto{
@@ -217,6 +278,11 @@ input,select{
 
 #otros{
   display: none
+}
+
+
+#ajax{
+
 }
 
 /*#quien-soy{

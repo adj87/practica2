@@ -19,9 +19,9 @@ select.addEventListener('change', function(event){
 
 
 form.addEventListener('submit', function(event){
-    console.log(email.value)
+    // console.log(email.value)
     event.preventDefault()
-    console.log(validaCorreo(email))
+    validarEmail(email.value)
 })
 
     
@@ -40,16 +40,28 @@ function validation(){
 
 }
 
-function validaCorreo(correo){
 
-  
-  var regex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
-  
-  if (!regex.test(correo)) {
-    return "Bueno"
+
+function validarEmail(valor) {
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/.test(valor)){
+   alert("La dirección de email " + valor + " es correcta.");
   } else {
-    return "Malo"
+   alert("La dirección de email "+valor+" es incorrecta.");
   }
-
 }
+
+
+// function validaCorreo(correo){
+
+  
+//   // var regex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+//   var regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/
+  
+//   if (regex.test(correo)) {
+//     return "Bueno"
+//   } else {
+//     return "Malo"
+//   }
+
+// }
 
