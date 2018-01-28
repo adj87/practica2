@@ -263,7 +263,7 @@ box-shadow: 12px -6px 20px 1px rgba(0,0,0,0.26);
   background-color: black;
   padding: 80px 225px;
   box-sizing: content-box !important;
-  min-height: 900px !important
+  min-height: 1000px !important
 }
 
 .contacto__title{
